@@ -1,5 +1,7 @@
 ﻿# What is the JavaScript Event Loop?
 
+Short answer:
+
 > The event loop is mechanism which look at the call stack and at the callback queue. If the stack is empty it takes the first thing on the queue and pushes it on to the stack which effectively run it.
 
 Some simplified background information:
