@@ -1,4 +1,4 @@
-﻿# JavaScript Hoisting
+﻿# What is JavaScript Hoisting?
 
 > Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
 
@@ -48,10 +48,10 @@ This is how the interpreter views the above code:
 ```javascript
 
 function sayMessage() {
-    var message;
-    console.log(message); // undefined
-    message = 'Hello world!';
-    console.log(message); // Hello world!
+	var message;
+	console.log(message); // undefined
+	message = 'Hello world!';
+	console.log(message); // Hello world!
 }
 
 sayMessage();
@@ -92,17 +92,24 @@ let b; // not hoisted
 ```
 
 ## Block-scoped Functions
-Function declarations inside of blocks are now specified to be scoped to that block. 
+Function declarations inside of blocks are in ES6 specified to be scoped to that block. 
 
 ```javascript
 
 {
-    let sayHello = function() {
-        console.log('Hellow world!');
-    };
-    sayHello();
+	let sayHello = function() {
+		console.log('Hellow world!');
+	};
+	sayHello();
 }
 
 sayHello(); // ReferenceError
 
 ```
+
+
+### Useful resources:
+
+[Block-scoped variables](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20%26%20beyond/ch2.md#let-declarations)
+
+[Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
