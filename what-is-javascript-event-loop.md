@@ -17,6 +17,7 @@ The JavaScript runtime in the browser (v8 in this case) is composed of:
 
 
 The browser also provides:
+
 - APIs which are extra things that the browser provides. DOM, AJAX, time out, etc.
 - Callback queue, which is a list of functions to be processed. When the stack has enough capacity, a function is taken out of the queue and processed. The callback queue is simply a staging area for functions waiting to be invoked and moved over to the call stack.
 - The event loop's job is to look at the call stack and at the callback queue. If the stack is empty it takes the first thing on the queue and pushes it on to the call stack which effectively run it.
