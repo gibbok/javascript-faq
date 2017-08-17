@@ -24,6 +24,7 @@ The browser also provides:
 In the following example, both functions are added on the stack and executed synchronous one after another.
 
 ```javascript
+
 var first = function () {  
   console.log('first');
 };
@@ -40,6 +41,7 @@ second();
  *  => first
  *  => second
  */
+
 ```
 
 ## Asynchronous code example:
@@ -49,6 +51,7 @@ In the following example, the first and second `console.log` are executed synchr
 The delay parameter in `setTimeout` will add a message to the queue after the time passed as a second argument. If there is no other message in the queue, the message is processed right away; however, if there are messages, the `setTimeout` message will have to wait for other messages to be processed. For that reason the second argument indicates a minimum time and not a guaranteed time.
 
 ```javascript
+
 console.log('start');
 
 setTimeout(function cb(){
@@ -64,6 +67,7 @@ console.log('end');
  *  => end
  *  => cb
  */
+
 ```
 
 ---
