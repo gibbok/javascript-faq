@@ -75,7 +75,6 @@ console.log('end');
 
 ---
 
-
 ### Useful resources:
 
 [Concurrency model and Event Loop](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
